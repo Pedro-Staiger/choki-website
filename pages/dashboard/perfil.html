@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choki | Perfil</title>
+
+    <link rel="stylesheet" href="../../css/perfil.css">
+
+    <script type="text/javascript" src="../../js/perfil.js" defer></script>
+    <script type="text/javascript" src="../../js/logout.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <nav class="side-menu">
+            <div class="logo-name">
+                <div class="logo-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-zap size-5 text-primary-foreground" aria-hidden="true">
+                        <path
+                            d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z">
+                        </path>
+                    </svg>
+                </div>
+                <h2>Choki</h2>
+            </div>
+            <ul class="menu-items">
+                <li class="menu-item menu-inactive" id="link-dashboard" onclick="window.location = 'dashboard.html'">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="7" height="7" x="3" y="3" rx="1" />
+                        <rect width="7" height="7" x="14" y="3" rx="1" />
+                        <rect width="7" height="7" x="14" y="14" rx="1" />
+                        <rect width="7" height="7" x="3" y="14" rx="1" />
+                    </svg>
+                    <a>Dashboard</a>
+                </li>
+                <li class="menu-item menu-inactive" id="link-relatiorios" onclick="window.location = 'relatorios.html'">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="20" x2="18" y2="10" />
+                        <line x1="12" y1="20" x2="12" y2="4" />
+                        <line x1="6" y1="20" x2="6" y2="14" />
+                    </svg>
+                    <a>Relatórios</a>
+                </li>
+                <li class="menu-item menu-inactive" id="link-dispositivos"
+                    onclick="window.location = 'dispositivos.html'">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="4" y="4" width="16" height="16" rx="2" />
+                        <rect x="9" y="9" width="6" height="6" />
+                        <line x1="9" y1="1" x2="9" y2="4" />
+                        <line x1="15" y1="1" x2="15" y2="4" />
+                        <line x1="9" y1="20" x2="9" y2="23" />
+                        <line x1="15" y1="20" x2="15" y2="23" />
+                        <line x1="20" y1="9" x2="23" y2="9" />
+                        <line x1="20" y1="14" x2="23" y2="14" />
+                        <line x1="1" y1="9" x2="4" y2="9" />
+                        <line x1="1" y1="14" x2="4" y2="14" />
+                    </svg>
+                    <a>Dispositivos</a>
+                </li>
+                <li class="menu-item menu-inactive" id="link-comodos" onclick="window.location = 'comodos.html'">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                        <polyline points="9 22 9 12 15 12 15 22" />
+                    </svg>
+                    <a>Cômodos</a>
+                </li>
+                <li class="menu-item menu-active" id="link-perfil" onclick="window.location = 'perfil.html'">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="8" r="4" />
+                        <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
+                    </svg>
+                    <a>Perfil</a>
+                </li>
+            </ul>
+            <hr>
+            <div class="container-sair" onclick="logout()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+                    <polyline points="16 17 21 12 16 7" />
+                    <line x1="21" y1="12" x2="9" y2="12" />
+                </svg>
+                <a>Sair</a>
+            </div>
+        </nav>
+        <section class="main-section">
+            <div class="main-header">
+                <div class="search-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-search-icon lucide-search">
+                        <path d="m21 21-4.34-4.34" />
+                        <circle cx="11" cy="11" r="8" />
+                    </svg>
+                    <input id="input-search" placeholder="Buscar aparelhos, cômodos, etc..." />
+                </div>
+                <div class="profile-picture" onclick="window.location = 'perfil.html'">
+                    <!--Quando conectar com a API, substituir pela foto do usuário-->
+                    <b></b>
+                </div>
+            </div>
+            <div class="main-container">
+                <h2>Perfil</h2>
+                <p>Gerencie suas informações e preferências</p>
+                <div class="perfil-container">
+                    <div class="perfil-header">
+                        <div class="perfil-icon">
+                            <b></b>
+                        </div>
+                        <div class="perfil-info">
+                            <h3 id="txt-nome">{Nome}</h3>
+                            <p id="txt-email">{nome}@{email}.com</p>
+                        </div>
+                    </div>
+                    <div class="perfil-form">
+                        <div class="form-inputs">
+                            <div class="input-container">
+                                <p>Nome</p>
+                                <input type="text" id="input-nome" placeholder="{Nome}" />
+                            </div>
+                            <div class="input-container">
+                                <p>E-mail</p>
+                                <input type="text" id="input-email" placeholder="{nome}@{email}.com" />
+                            </div>
+                            <div class="input-container">
+                                <p>Meta diária (kWh)</p>
+                                <input type="text" id="input-meta-diaria" placeholder="{valor kWh}" />
+                            </div>
+                            <div class="input-container">
+                                <p>Meta mensal (R$)</p>
+                                <input type="text" id="input-meta-mensal" placeholder="{valor R$}" />
+                            </div>
+                            <div class="input-container">
+                                <p>Tarifa elétrica (R$/kWh)</p>
+                                <input type="text" id="input-tarifa" placeholder="{valor R$}" />
+                            </div>
+                        </div>
+                        <button type="submit" onclick="atualizarUsuario(this)">Salvar alterações</button>
+                        <b class="alert-field"></b>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
