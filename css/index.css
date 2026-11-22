@@ -725,6 +725,78 @@ progress::-webkit-progress-bar {
     list-style: disc;
 }
 
+.section-5 {
+    width: 80%;
+    height: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.section-5 .section-developer {
+    height: auto;
+
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 15px;
+
+    background: var(--gradient-card);
+    background-color: var(--card);
+    border: 1.75px solid #a0b0a835;
+    border-radius: 25px;
+
+    transition:
+        opacity 0.95s ease-out,
+        transform 0.75s ease-out,
+        border 0.3s ease-out;
+}
+
+.section-5 .section-developer:hover {
+    border: 1.75px solid #f9ea0075;
+    transform: scale(1.01);
+}
+
+.section-5 .section-developer img {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 25px;
+}
+
+.section-5 .section-developer h2 {
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 22.5px;
+
+    color: var(--foreground);
+}
+
+.section-5 .section-developer h3 {
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+
+    color: var(--primary);
+}
+
+.section-5 .section-developer p {
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+
+    color: #a0b0a8;
+}
+
 footer {
     width: 100%;
     height: auto;
@@ -840,6 +912,10 @@ footer h3 {
     .section-4 {
         width: 80%;
     }
+
+    .section-5 {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 999px) {
@@ -897,6 +973,10 @@ footer h3 {
         grid-template-rows: 1fr 1fr 1fr;
 
     }
+
+    .section-5 {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1440px) {
@@ -913,6 +993,7 @@ footer h3 {
 }
 
 @media only screen and (min-width: 1440px) and (max-width: 1550px) {
+
     /* Styles for large laptops */
     .section-1 {
         width: 80%;
