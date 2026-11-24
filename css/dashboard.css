@@ -676,6 +676,16 @@ main {
     gap: 25px;
 }
 
+.dispositivos-progress p {
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+
+    color: #a0b0a8;
+}
+
 .dispositivo {
     width: 100%;
     height: auto;
