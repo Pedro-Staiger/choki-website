@@ -169,7 +169,7 @@ function generateGraphic(leituras = []) {
                 borderWidth: 2.5,
                 backgroundColor: gradient,
                 fill: 'origin',
-                tension: 0.1,
+                tension: 0.35,
                 pointBackgroundColor: 'oklch(92% .2 105)',
                 pointBorderColor: 'transparent',
                 pointRadius: 3,

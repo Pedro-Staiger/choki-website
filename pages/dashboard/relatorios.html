@@ -119,10 +119,16 @@
                 <h2>Relatórios</h2>
                 <p>Sobre os consumos periódicos</p>
                 <div class="relatorios-grid">
-                    <div class="relatorio-card">
+                    <div class="relatorio-card" id="card-hoje">
                         <div class="relatorio-header">
-                            <h2>Diário</h2>
-                            <p>Com base na meta limite</p>
+                            <div>
+                                <h2>Diário</h2>
+                                <p>Com base na meta limite</p>
+                            </div>
+                            <div class="relatorio-totais">
+                                <span class="relatorio-kwh" id="total-kwh-hoje">-- kWh</span>
+                                <span class="relatorio-reais" id="total-reais-hoje">R$ --</span>
+                            </div>
                         </div>
                         <div class="relatorio-body">
                             <!-- Circular Progress -->
@@ -174,10 +180,16 @@
                         </div>
                     </div>
                     <!-- Card Semanal -->
-                    <div class="relatorio-card">
+                    <div class="relatorio-card" id="card-semanal">
                         <div class="relatorio-header">
-                            <h2>Semanal</h2>
-                            <p>Com base na meta limite</p>
+                            <div>
+                                <h2>Semanal</h2>
+                                <p>Com base na meta limite</p>
+                            </div>
+                            <div class="relatorio-totais">
+                                <span class="relatorio-kwh" id="total-kwh-semanal">-- kWh</span>
+                                <span class="relatorio-reais" id="total-reais-semanal">R$ --</span>
+                            </div>
                         </div>
                         <div class="relatorio-body">
                             <div class="circular-progress">
@@ -224,12 +236,17 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Card Mensal -->
-                    <div class="relatorio-card">
+                    <div class="relatorio-card" id="card-mensal">
                         <div class="relatorio-header">
-                            <h2>Mensal</h2>
-                            <p>Com base na meta limite</p>
+                            <div>
+                                <h2>Mensal</h2>
+                                <p>Com base na meta limite</p>
+                            </div>
+                            <div class="relatorio-totais">
+                                <span class="relatorio-kwh" id="total-kwh-mensal">-- kWh</span>
+                                <span class="relatorio-reais" id="total-reais-mensal">R$ --</span>
+                            </div>
                         </div>
                         <div class="relatorio-body">
                             <div class="circular-progress">
@@ -276,12 +293,17 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Card Anual -->
-                    <div class="relatorio-card">
+                    <div class="relatorio-card" id="card-anual">
                         <div class="relatorio-header">
-                            <h2>Anual</h2>
-                            <p>Acumulado vs meta</p>
+                            <div>
+                                <h2>Anual</h2>
+                                <p>Com base na meta limite</p>
+                            </div>
+                            <div class="relatorio-totais">
+                                <span class="relatorio-kwh" id="total-kwh-anual">-- kWh</span>
+                                <span class="relatorio-reais" id="total-reais-anual">R$ --</span>
+                            </div>
                         </div>
                         <div class="relatorio-body">
                             <div class="circular-progress">
