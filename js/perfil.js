@@ -99,7 +99,7 @@ function atualizarUsuario(buttonContainer) {
         return
     }
 
-    if (!isNaN(metaDiaria) || !isNaN(metaMensal) || !isNaN(tarifa)) {
+    if (isNaN(metaDiaria) || isNaN(metaMensal) || isNaN(tarifa)) {
         alertField.textContent = "Insira valores válidos";
         return
     }
